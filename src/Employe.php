@@ -4,9 +4,9 @@ namespace App;
 
 class Employe
 {
-    private string $nom;
-    private string $prenom;
-    private int $age;
+    protected string $nom;
+    protected string $prenom;
+    protected int $age;
 
     /**
      * @param string $nom
