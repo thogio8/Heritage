@@ -63,6 +63,17 @@ class Entreprise
         return $tableauTrie;
     }
 
+    public function afficherSalairePersonnel() : array{
+        $tableauResultat = [];
+        foreach($this->employes as $employe){
+            $nomEmploye = $employe->getNom()." ".$employe->getPrenom();
+            $salaire = $employe->calculSalaire();
+            $tableauResultat[$nomEmploye][] = $salaire;
+        }
+
+        return $tableauResultat;
+    }
+
     public function ajouterEmployesCSV(string $fichier) : void{
         $csv = Reader::createFromPath("./csv/".$fichier);
         $csv->setHeaderOffset(0);

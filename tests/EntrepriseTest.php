@@ -8,11 +8,11 @@ use App\ChefService;
 
 $entreprise = new \App\Entreprise("Toto", "Paris");
 
-$employe = new Employe("Gioana", "Thomas", 20);
-$employe2 = new Employe("Racine", "Esteban",20);
-$patron = new Patron("Gioana", "Thomas", 20, "GT3RS");
-$patron2 = new Patron("Gioana","Olivier", 50, "GT2RS");
-$chefService = new ChefService("Gioana", "Thomas", 20, "Informatique");
+$employe = new Employe("Gioana", "Thomas", 20, 1500);
+$employe2 = new Employe("Racine", "Esteban",20, 1800);
+$patron = new Patron("Toto", "Thomas", 20, 3000, "RS6", 200);
+$patron2 = new Patron("Tata","Olivier", 50, 5000, "GT3RS", 105);
+$chefService = new ChefService("Zaza", "Thomas", 20, 2000, "Informatique");
 
 
 if(!$entreprise->ajouterEmployes($employe)){
@@ -41,3 +41,5 @@ dump($entreprise->afficherEmployeParClasse());
 $entreprise->ajouterEmployesCSV("personnel.csv");
 
 dump($entreprise->afficherEmployeParClasse());
+
+dump($entreprise->afficherSalairePersonnel());
