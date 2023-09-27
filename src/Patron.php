@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Patron extends Employe
+class Patron extends Personnel
 {
     private string $voiture;
 

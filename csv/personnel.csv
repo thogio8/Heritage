@@ -1,0 +1,7 @@
+Categorie;Nom;Prenom;Age;Voiture;Service
+Employe;emp1;toto;20;;
+Employe;emp2;toto;20;;
+Patron;pat;toto;20;RS3;
+ChefService;chef1;toto;20;;Informatique
+ChefService;chef2;toto;20;;RH
+ChefService;chef3;toto;20;;Garage
